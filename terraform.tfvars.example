@@ -1,0 +1,5 @@
+gcp_project   = "your-project-id"
+gcp_region    = "us-central1"
+gcp_zone      = "us-central1-a"
+instance_name = "terraform-vm"
+instance_type = "e2-micro"
