@@ -20,7 +20,6 @@ jobs:
 
       - name: Authenticate to GCP
         uses: google-github-actions/setup-gcloud@v1
-        if: ${{ secrets.GCP_SA_KEY != '' }}
         with:
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           project_id: ${{ secrets.GCP_PROJECT_ID }}
