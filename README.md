@@ -65,3 +65,4 @@ The active workspace determines the GCP project used by the provider. Update `pr
 
 - This example creates a Debian 12 VM with a public external IP in the default VPC.
 - Update `variables.tf`, `terraform.tfvars`, or pass variables at runtime if you want a different project, zone, or machine type.
+- extra line
