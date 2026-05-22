@@ -1,7 +1,18 @@
 variable "gcp_project" {
-  description = "Google Cloud project ID where the VM instance will be created."
+  description = "Fallback Google Cloud project ID when the current workspace is not mapped to an environment."
   type        = string
   default     = ""
+}
+
+variable "project_ids" {
+  description = "Map of Terraform workspace names to GCP project IDs for each environment."
+  type        = map(string)
+  default = {
+    dev   = "dev-project1-497017"
+    test  = "test-project1-497021"
+    stage = "stage-project1"
+    prod  = "prod-project1-497021"
+  }
 }
 
 variable "gcp_region" {
