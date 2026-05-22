@@ -68,3 +68,4 @@ The active workspace determines the GCP project used by the provider. Update `pr
 
 --extra line to check git diff
 line2
+line 3
