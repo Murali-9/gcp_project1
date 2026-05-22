@@ -1,4 +1,10 @@
-gcp_project   = "dev-project1-497017"
+project_ids = {
+  dev   = "your-dev-project-id"
+  test  = "your-test-project-id"
+  stage = "your-stage-project-id"
+  prod  = "your-prod-project-id"
+}
+
 gcp_region    = "us-central1"
 gcp_zone      = "us-central1-a"
 instance_name = "terraform-vm"

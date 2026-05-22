@@ -29,19 +29,37 @@ gcloud config set project YOUR_PROJECT_ID
 terraform init
 ```
 
-2. Review the planned changes:
+2. Create or select an environment workspace:
+
+```powershell
+terraform workspace new dev
+terraform workspace select dev
+```
+
+3. Review the planned changes:
 
 ```powershell
 terraform plan
 ```
 
-3. Apply the configuration:
+4. Apply the configuration:
 
 ```powershell
 terraform apply
 ```
 
-4. Confirm with `yes` when prompted.
+5. Confirm with `yes` when prompted.
+
+## Environment workspaces
+
+This repository supports four Terraform workspaces with separate GCP projects:
+
+- `dev`
+- `test`
+- `stage`
+- `prod`
+
+The active workspace determines the GCP project used by the provider. Update `project_ids` in `terraform.tfvars` or `terraform.tfvars.example` to match your actual GCP project IDs.
 
 ## Notes
 
